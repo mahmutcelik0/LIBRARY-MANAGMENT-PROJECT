@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane minHeight="490.0" minWidth="800.0" style="-fx-background-color: F3F4ED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginproject.leftSideControllers.HomePageController">
+   <stylesheets>
+      <URL value="@../../../../../CSSFILE/rightPartCss.css" />
+      <URL value="@../../../../../CSSFILE/ownCss.css" />
+   </stylesheets>
+   <children>
+      <GridPane alignment="CENTER" layoutX="45.0" layoutY="39.0" prefHeight="446.0" prefWidth="745.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="111.0" minHeight="111.0" prefHeight="88.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="130.0" minHeight="130.0" prefHeight="130.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="111.0" minHeight="111.0" prefHeight="74.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="130.0" minHeight="130.0" prefHeight="130.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Number of BOOKS" textAlignment="CENTER" GridPane.halignment="CENTER" />
+            <Label alignment="CENTER" text="Number of FREE BOOKS" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Label prefHeight="58.0" prefWidth="173.0" text="Number of BORROWED BOOKS" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="173.0" GridPane.rowIndex="1">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="211.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../../ImageAndIcon/icons8_Book_Shelf_50px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="numberOfBooks" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="173.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="211.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../../ImageAndIcon/icons8-free-64.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="numberOfFreeBooks" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="173.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Pane prefHeight="15.0" prefWidth="211.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@../../ImageAndIcon/icons8_Sell_50px.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="numberOfBorrowedBooks" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label text="Number of STUDENTS" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="Number of students who bought books" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label text="Number of students who did not buy books" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../../ImageAndIcon/icons8_People_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="numberOfStudents" text="Label">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../../ImageAndIcon/icons8-paid-48.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="boughtBooks" text="Label">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="224.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../../ImageAndIcon/icons8-delete-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="notBoughtBooks" text="Label">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="490.0" minWidth="800.0" style="-fx-background-color: F3F4ED;" stylesheets="@../../../../../CSSFILE/rightPartCss.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginproject.leftSideControllers.ViewBookController">
+   <children>
+      <Label layoutX="259.0" layoutY="14.0" style="-fx-font-size: 24px;" text="ALL BOOKS in LIBRARY" />
+      <TableView fx:id="bookView" layoutX="14.0" layoutY="44.0" prefHeight="424.0" prefWidth="772.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="52.0">
+        <columns>
+          <TableColumn fx:id="bookID" maxWidth="60.0" minWidth="60.0" prefWidth="76.0" text="ID" />
+          <TableColumn fx:id="bookName" prefWidth="136.0" text="NAME" />
+            <TableColumn fx:id="bookAuthor" minWidth="120.0" prefWidth="88.0" text="AUTHOR" />
+            <TableColumn fx:id="bookType" minWidth="100.0" prefWidth="10.0" text="TYPE" />
+            <TableColumn fx:id="bookYear" prefWidth="75.0" text="YEAR" />
+            <TableColumn fx:id="bookBorrowerID" minWidth="125.0" prefWidth="75.0" text="BORROWER ID" />
+            <TableColumn fx:id="bookBorrowerName" minWidth="160.0" prefWidth="75.0" text="BORROWER NAME" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

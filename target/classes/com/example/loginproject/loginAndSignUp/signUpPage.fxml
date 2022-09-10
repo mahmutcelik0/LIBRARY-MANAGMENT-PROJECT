@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginproject.loginAndSignUpControllers.CloseAndBackwardController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1024.0">
+         <image>
+            <Image url="@../ImageAndIcon/library_drawing-wallpaper-1366x768.jpg" />
+         </image>
+      </ImageView>
+      <Label blendMode="HARD_LIGHT" layoutX="87.0" layoutY="379.0" text="LIBRARY MANAGMENT PROJECT" textFill="RED">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.41" contrast="1.0" hue="1.0" saturation="-1.0" />
+         </effect>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label blendMode="HARD_LIGHT" layoutX="215.0" layoutY="282.0" text="WELCOME TO" textFill="RED">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.41" contrast="1.0" hue="1.0" saturation="-1.0" />
+         </effect>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Button depthTest="DISABLE" layoutX="14.0" layoutY="14.0" maxHeight="46.0" maxWidth="35.0" mnemonicParsing="false" onMouseReleased="#toGoBackward">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../ImageAndIcon/icons8-go-back-64.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </ImageView>
+         </graphic>
+      </Button>
+      <fx:include layoutX="620.0" layoutY="110.0" source="signUp.fxml" />
+      <Button layoutX="971.0" layoutY="14.0" mnemonicParsing="false" onMouseReleased="#closeProgram" textFill="RED">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../ImageAndIcon/icons8-close-30.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
