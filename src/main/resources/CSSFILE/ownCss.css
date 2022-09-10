@@ -1,0 +1,31 @@
+.titled-pane{
+    -fx-background-color :  #536162;
+}
+
+.button{
+    -fx-background-color :  #536162;
+    -fx-text-fill :  #F3F4ED;
+}
+
+.button:hover{
+    -fx-background-color : #F3F4ED;
+    -fx-text-fill : #536162;
+}
+
+.titled-pane > .title {
+    -fx-background-color: #536162;
+    -fx-text-fill : F3F4ED;
+}
+.titled-pane:hover > .title
+{
+-fx-background-color:  F3F4ED;
+-fx-text-fill : #536162;
+}
+.titled-pane:hover {
+    -fx-background-color:  F3F4ED;
+    -fx-text-fill : #536162;
+}
+.titled-pane:hover > .title > .arrow-button .arrow
+{
+-fx-background-color: #536162;
+}
